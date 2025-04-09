@@ -1,14 +1,22 @@
-// src/App.jsx (혹은 Layout.jsx 등)
-import Header from './components/Header'
-import Products from './pages/Products'
+// App.jsx
+import React from 'react'
 
-function App() {
+import Header from './components/Header/Header'
+import Products from './pages/Products/Products'
+import Sidebar from './components/Sidebar/Siderbar'
+
+import './App.scss'
+
+export default function App() {
   return (
-    <div>
-      <Header />
-      <Products></Products>
+    <div className="app-root">
+      <Sidebar />
+      <div className="main-content">
+        <Header />
+        <main className="page-content">
+          <Products />
+        </main>
+      </div>
     </div>
   )
 }
-
-export default App;
