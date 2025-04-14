@@ -1,11 +1,11 @@
 // App.jsx
-import React from 'react'
+import React from "react";
 
-import Header from './components/Header/Header'
-import Products from './pages/Products/Products'
-import Sidebar from './components/Sidebar/Siderbar'
+import Header from "./components/Header/Header";
+import Products from "./pages/Products/Products";
+import Sidebar from "./components/Sidebar/Sidebar";
 
-import './App.scss'
+import "./App.scss";
 
 export default function App() {
   return (
@@ -18,5 +18,5 @@ export default function App() {
         </main>
       </div>
     </div>
-  )
+  );
 }
