@@ -13,13 +13,18 @@ body,
   height: 100%;
 }
 
+// .main-content {
+//   display: flex;
+//   flex-direction: column;
+//   flex: 1;
+//   margin-left: 150px;
+//   min-height: 100vh;
+//   background-color: #f7f9fa;
+// }
+
 .main-content {
-  display: flex;
-  flex-direction: column;
-  flex: 1;
-  margin-left: 150px;
-  min-height: 100vh;
-  background-color: #f7f9fa;
+  width: 100vw;
+  height: 100vh;
 }
 
 .page-content {
