@@ -1,0 +1,22 @@
+.layoutContainer {
+  display: flex;
+  flex-direction: column;
+  min-width: 100vh;
+  background-color: #f4f7f6;
+}
+
+.layoutBody {
+    display: flex;
+    flex: 1;
+    overflow: hidden;
+
+    margin-bottom: 100px;
+}
+
+.contentArea {
+    display: flex;
+    flex: 1;
+    padding: 20px;
+    overflow-y: auto; // 내용이 밑으로 길어지면 이 영역만 스크롤
+    background-color: #ffffff;
+}

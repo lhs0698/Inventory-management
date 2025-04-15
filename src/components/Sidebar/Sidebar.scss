@@ -2,33 +2,26 @@
   position: fixed;
   top: 0;
   left: 0;
-  width: 110px;
+  width: 170px;
   height: 100vh;
   background-color: #1f2937;
   color: white;
   padding: 20px;
-  z-index: 100;
   transition: width 0.3s ease;
   overflow: visible;
-
-  &.collapsed {
-    width: 0; // 너비를 0으로 해서 숨기기
-    padding: 0; // padding도 0으로 줄여서 공간을 최소화
-  }
-
-  .sidebar-header {
-    font-size: 18px;
-    font-weight: bold;
-    margin-top: 7px;
-    margin-bottom: 80px;
-  }
+  z-index: 1000;
+  margin-top: 58px;
 
   .sidebar-menu {
     display: flex;
     flex-direction: column;
+    justify-content: center;
+    align-items: center;
     gap: 22px;
 
-    a {
+    margin-top: 50px;
+
+    div {
       color: #d1d5db;
       text-decoration: none;
       font-size: 14px;
@@ -40,17 +33,5 @@
         color: #ffffff;
       }
     }
-  }
-
-  .toggle-btn {
-    position: fixed; /* 화면 고정 */
-    top: 0px; /* 상단에서 20px */
-    background: #374151;
-    color: white;
-    border: none;
-    cursor: pointer;
-    padding: 8px 12px;
-    font-size: 13px;
-    z-index: 200; /* 사이드바 위에 버튼이 항상 보이도록 */
   }
 }
